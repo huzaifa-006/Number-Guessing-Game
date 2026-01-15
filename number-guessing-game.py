@@ -3,7 +3,6 @@ import random
 def guess_num():
     print('...WELCOME TO NUMBER GUESSING GAME...')
     print('...Guess a number between 1 and 100...')
-    
     sec_num = random.randint(1, 100)
     attempts = 0
     
@@ -21,6 +20,7 @@ def guess_num():
             else:
                 print(f'CONGRATULATIONS! Your guessed number is in {attempts} attempts.')
                 break
+            
         except ValueError:
             print('Invalid input! Please enter a number')
             
